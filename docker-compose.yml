@@ -1,0 +1,7 @@
+services:
+  qrcode-tools:
+    build: .
+    container_name: qrcode-tools
+    ports:
+      - "8847:80"
+    restart: unless-stopped
